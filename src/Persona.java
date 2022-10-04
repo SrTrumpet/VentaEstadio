@@ -1,6 +1,7 @@
 
 public class Persona {
 	
+	private Asiento asiento;
 	private String nombre;
 	private String rut;
 	private int edad;
