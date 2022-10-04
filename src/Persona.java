@@ -12,6 +12,8 @@ public class Persona {
 		this.edad = edad;
 	}
 
+	public void agregarAsiento(Asiento a) {this.asiento = a;}
+	
 	public String getNombre() {
 		return nombre;
 	}
