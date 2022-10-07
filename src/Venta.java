@@ -1,8 +1,9 @@
 
 public class Venta {
 	
-	private static int numeroVenta = 0;
+	private static int idVenta;
 	private Asiento[] listaComprado;
+	
 	
 	
 	

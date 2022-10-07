@@ -3,10 +3,13 @@ public class Asiento {
 
 	private Persona usuario;
 	private int numeroAsiento;
+	private String tipo;
 	
-	public Asiento(Persona usuario, int numeroAsiento) {
+	public Asiento(Persona usuario, int numeroAsiento, String tipo) {
 		this.usuario = usuario;
 		this.numeroAsiento = numeroAsiento;
+		this.tipo = tipo;
+		
 	}
 
 	public Persona getUsuario() {

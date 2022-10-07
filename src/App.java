@@ -36,11 +36,10 @@ public class App {
 					
 					Asiento[] listaAsientos = new Asiento[cantAsientos];
 					int ciclosWhile = 0;
+					int totalAPagar = 0;
 					
 					while(ciclosWhile != cantAsientos) {
 						
-						
-						int totalAPagar = 0;
 						System.out.println("Ingrese su nombre: ");
 						String nombre = leer.nextLine();
 						System.out.println("Ingrese su rut: ");
@@ -64,11 +63,13 @@ public class App {
 									totalAPagar += 30000;
 									
 									Persona p = new Persona(nombre, rut, edad);
-									Asiento a = new Asiento(p, numeroAsiento);
+									Asiento a = new Asiento(p, numeroAsiento,"G");
 									
 									reservarAsiento(asientoReal, asientosDisponibles, numeroAsiento, a);
 									
 									mostrarCancha(asientosDisponibles);
+									
+									
 									ciclosWhile++;
 								}else {
 									System.out.println("Asiento reservado con anterioridad!");
